@@ -1,0 +1,69 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Towers of Hanoi</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="description" content="8Box Solution Client Registration">
+        <link type="text/css" rel="stylesheet" href="hanoi_swap_styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main_div">
+            <div class="header_div">
+                <h1>Hanoi Swap</h1>
+                <div class="move_div">
+                    <div class="move_cont">
+                        <h2 id="move_label">Moves:</h2>
+                        <h2 id="move_score">0</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="box_div">
+                <div class="col1_div">
+                    <div class="tube_1">
+                        <div class="p1" id="p1" onclick="select_box1()">1</div>
+                        <div class="p2" id="p2" onclick="select_box2()">2</div>
+                        <div class="p3" id="p3" onclick="select_box3()">3</div>
+                    </div>
+                    <div class="result1" id="result" onclick="reveal_result()"> </div>
+                </div>
+                
+                <div class="controls_div">
+                    <div class="controls_cont">
+                        <div class="swapIN_div">
+                            <button type="button" id="swapIN1" onclick="move_out1()">Swap In Top</button>
+                        </div>
+                        <div class="swapIN_div">
+                            <button1 type="button" id="swapIN2" onclick="move_out2()" onclick="countClicks()"></button1>
+                        </div>
+                        <div class="swapIN_div">
+                            <button type="button" id="swapIN3" onclick="move_out3()" onclick="countClicks()">Swap In Bottom</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col2_div">
+                     <div class="tube_2">
+                        <div class="p4" id="p4" onclick="select_box4()">4</div>
+                        <div class="p5" id="p5" onclick="select_box5()">5</div>
+                        <div class="p6" id="p6" onclick="select_box6()">6</div>
+                    </div>
+                    <div class="result2"> </div>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+        <div class="trash" id="trash_div1"></div>
+        <div class="trash" id="trash_div2"></div>
+        <div class="trash" id="trash_div3"></div>
+
+        
+        <script src="hanoi_swap_script.js"></script>
+    </body>
+    
+</html>
